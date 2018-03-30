@@ -13,7 +13,6 @@ class Captcha
         for ($i = 0; $i < $length; $i++) {
             $code .= rand(0, 9);
         }
-        session_start();
         $_SESSION["helloweba_num"] = $code;
         Header("Content-type: image/PNG");
         $im      = imagecreate($width, $height);
