@@ -54,6 +54,3 @@ class Captcha
         imagedestroy($im);
     }
 }
-
-$captcha = new Captcha;
-$captcha->generator(4, 60, 20);
